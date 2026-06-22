@@ -41,7 +41,7 @@ fun MilkTeaHomeTab(
         CenterAlignedTopAppBar(title = {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text("🧋", fontSize = 24.sp); Spacer(modifier = Modifier.width(8.dp))
-                Text("奶茶了么", fontWeight = FontWeight.Bold)
+                Text("奶了么", fontWeight = FontWeight.Bold)
             }
         })
 

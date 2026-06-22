@@ -9,7 +9,7 @@ object NotificationHelper {
     private const val CHANNEL_ID = "milktea_tracker_channel"
     private const val CHANNEL_NAME = "奶茶提醒"
     fun createNotificationChannel(context: Context) {
-        val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT).apply { description = "奶茶了么提醒" }
+        val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT).apply { description = "奶了么提醒" }
         val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         manager.createNotificationChannel(channel)
     }

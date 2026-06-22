@@ -59,7 +59,7 @@ fun SettingsTab(settings: UserSettings, onSettingsChanged: (UserSettings) -> Uni
             item {
                 Card(modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.padding(16.dp)) {
-                        Text("奶茶了么", style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
+                        Text("奶了么", style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
                         Text("版本 1.0.0", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(text = "一款专为奶茶爱好者设计的饮用统计工具，帮助你了解糖分摄入、享受奶茶文化。", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
