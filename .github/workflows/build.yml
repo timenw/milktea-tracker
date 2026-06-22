@@ -50,7 +50,7 @@ jobs:
 
       - name: Rename APK
         run: |
-          VERSION=$(grep "versionName" android/app/build.gradle.kts | head -1 | sed 's/.*"\(.*\)".*/\1/')
+          VERSION=$(grep "versionName" android/app/build.gradle.kts | head -1 | sed 's/.*versionName\s*=\s*"\\([^"]*\\)".*/\\1/')
           DATE=$(date +%Y%m%d)
           SHORT_SHA=${GITHUB_SHA::7}
           APK_NAME="MilkTeaTracker-v${VERSION}-${DATE}-${SHORT_SHA}.apk"
