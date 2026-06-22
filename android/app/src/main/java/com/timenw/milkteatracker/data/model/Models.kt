@@ -8,9 +8,6 @@ enum class MilkTeaType(
 ) {
     // ===== 经典奶茶 =====
     CLASSIC_MILK_TEA("经典奶茶", "🧋", MilkTeaCategory.CLASSIC, "30-60g", 40, 450, 500),
-    HONG_KONG_MILK_TEA("港式奶茶", "🇭🇰", MilkTeaCategory.CLASSIC, "20-40g", 60, 350, 400),
-    TAIWANESE_MILK_TEA("台式奶茶", "🇹🇼", MilkTeaCategory.CLASSIC, "40-70g", 35, 500, 500),
-    BRITISH_MILK_TEA("英式奶茶", "🇬🇧", MilkTeaCategory.CLASSIC, "15-30g", 50, 200, 350),
 
     // ===== 果茶 =====
     LEMON_TEA("柠檬茶", "🍋", MilkTeaCategory.FRUIT, "20-50g", 20, 250, 500),

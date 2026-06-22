@@ -136,7 +136,7 @@ fun MilkTeaTypeSelector(selectedType: MilkTeaType, onTypeSelected: (MilkTeaType)
         if (expanded) {
             Spacer(modifier = Modifier.height(8.dp))
             val groups = listOf(
-                listOf(MilkTeaType.CLASSIC_MILK_TEA, MilkTeaType.HONG_KONG_MILK_TEA, MilkTeaType.TAIWANESE_MILK_TEA, MilkTeaType.BRITISH_MILK_TEA),
+                listOf(MilkTeaType.CLASSIC_MILK_TEA),
                 listOf(MilkTeaType.LEMON_TEA, MilkTeaType.PEACH_TEA, MilkTeaType.MANGO_TEA, MilkTeaType.GRAPE_TEA, MilkTeaType.STRAWBERRY_TEA),
                 listOf(MilkTeaType.CHEESE_TEA, MilkTeaType.MATCHA_CHEESE, MilkTeaType.OOLONG_CHEESE),
                 listOf(MilkTeaType.BOBA_MILK_TEA, MilkTeaType.COCONUT_JELLY_TEA, MilkTeaType.PUDDING_TEA, MilkTeaType.RED_BEAN_TEA),
