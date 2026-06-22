@@ -74,7 +74,8 @@ fun StatsTab(weeklyData: List<DailyMilkTeaSummary>, drinkFrequency: Map<String, 
             if (categoryTotals.isEmpty()) {
                 item { Card(modifier = Modifier.fillMaxWidth()) { Text(text = "还没有奶茶记录，开始记录吧 🧋", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(24.dp)) }
             } else {
-                items(categoryTotals) { ct ->
+                items(categoryTotals.size) { index ->
+                    val ct = categoryTotals[index]
                     val teaType = try { MilkTeaType.valueOf(ct.teaType) } catch (e: Exception) { MilkTeaType.OTHER }
                     Card(modifier = Modifier.fillMaxWidth()) {
                         Column(modifier = Modifier.padding(16.dp)) {
