@@ -72,7 +72,7 @@ fun StatsTab(weeklyData: List<DailyMilkTeaSummary>, drinkFrequency: Map<String, 
                 Spacer(modifier = Modifier.height(8.dp))
             }
             if (categoryTotals.isEmpty()) {
-                item { Card(modifier = Modifier.fillMaxWidth()) { Text(text = "还没有奶茶记录，开始记录吧 🧋", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(24.dp)) }
+                item { Card(modifier = Modifier.fillMaxWidth()) { Text(text = "还没有奶茶记录，开始记录吧 🧋", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(24.dp)) } }
             } else {
                 items(categoryTotals.size) { index ->
                     val ct = categoryTotals[index]
